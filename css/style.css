@@ -1,0 +1,699 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.roboto-regular {
+  font-family: "Minion Pro Bold Cond", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Minion Pro", sans-serif;
+  font-size: 16px;
+  color: #262626;
+  margin: 0
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #1E1E1E;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #363636;
+  margin-top: 20px
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.menu {
+  padding-top: 20px
+}
+.menu ul li a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #1E1E1E;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.menu ul li a:hover {
+  background-color: #4E4E4E;
+  color: white
+}
+/*phan slider*/
+#slide .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+}
+#slide .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+}
+#slide .owl-nav {
+  position: absolute;
+  left: 0px;
+  top: 40%;
+  width: 100%;
+}
+#slide .owl-nav [class*='owl-'] {
+  font-size: 80px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #252525
+}
+#slide .owl-nav .owl-next {
+  position: absolute;
+  right: 5%;
+}
+#slide .owl-nav .owl-prev {
+  position: absolute;
+  left: 5%;
+}
+#slide .owl-nav [class*='owl-']:hover {
+  background: none;
+  border: none;
+  color: #1D1D1D;
+  text-decoration: none;
+}
+#slide .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #434343;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+#slide .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #eceee3;
+}
+main {
+  width: 100%;
+  min-height: 500px
+}
+.text-do {
+  color: darkred
+}
+aside ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column
+}
+aside ul li a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: #666666
+}
+aside ul li a:hover {
+  background-color: darkred;
+  color: white
+}
+aside ul li {
+  border-bottom: 1px solid gray
+}
+.canhgiua {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  padding-top: 35px;
+  justify-content: space-around
+}
+ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #CECECE;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 70px;
+  ;
+}
+ul li a:hover {
+  background-color: #ADADAD;
+  color: white
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: -30px;
+  color: #030A2E;
+  text-align: center;
+}
+h4 {
+  margin-top: -70px;
+  color: #696969;
+  text-align: center;
+}
+.khung-h1 {
+  width: 100%;
+  height: 360px;
+  background-color: #1E1E1E;
+}
+.khung-h2 {
+  width: 100%;
+  height: 300px;
+  background-color: #1E1E1E;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #363636;
+  display: flex;
+  justify-content: space-between; /* Tạo khoảng cách đều giữa các cột */
+}
+.cot {
+  margin: 0 0px; /* Lề trái và phải của mỗi cột */
+}
+.quoc-gia {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 50px;
+  margin-top: 50px;
+  transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+.quoc-gia:hover {
+  color: #ff5722; /* Đổi màu khi trỏ chuột vào */
+}
+.thanh-pho {
+  color: white;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 5px;
+  transition: text-decoration 0.3s ease; /* Hiệu ứng gạch chân khi hover */
+}
+.thanh-pho:hover {
+  text-decoration: underline; /* Gạch chân khi trỏ chuột vào */
+}
+.khung-h3 {
+  width: 100%;
+  height: 500px;
+  background-color: #FFFFFF;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #363636;
+  padding: 20px;
+}
+.cot-container1 {
+  display: flex; /* Dùng flexbox để tạo bố cục cột */
+  justify-content: space-between; /* Tạo khoảng cách đều giữa các cột */
+  gap: 60px; /* Khoảng cách giữa các cột */
+}
+.cot1 {
+  flex: 1; /* Chia đều chiều rộng của các cột */
+  text-align: left; /* Canh trái nội dung trong cột */
+}
+.quoc-gia1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+	text-align: left;
+}
+.thanh-pho1 {
+  font-size: 16px;
+  margin-bottom: 15px;
+	text-align: left;
+}
+/* Tùy chọn: Hiệu ứng khi di chuột */
+.quoc-gia1:hover {
+  color: #ff5733; /* Thay đổi màu chữ khi di chuột */
+}
+.thanh-pho1:hover {
+  text-decoration: underline; /* Gạch chân khi di chuột */
+}
+h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  border-bottom: 2px solid #363636;
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.free {
+  font-size: 30px;
+  border-bottom: 1.5px solid #363636;
+  width: 1100px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+.img-100 {
+  width: 100%;
+  height: auto;
+}
+.owl-carousel .item video {
+  width: 100%;
+  height: auto;
+}
+#chuyen .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+}
+#chuyen .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+}
+#chuyen .owl-nav {
+  position: absolute;
+  left: 0px;
+  top: 40%;
+  width: 100%;
+}
+#chuyen .owl-nav [class*='owl-'] {
+  font-size: 80px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #000000
+}
+#chuyen .owl-nav .owl-next {
+  position: absolute;
+  right: 5%;
+}
+#chuyen .owl-nav .owl-prev {
+  position: absolute;
+  left: 5%;
+}
+#chuyen .owl-nav [class*='owl-']:hover {
+  background: none;
+  border: none;
+  color: #565656;
+  text-decoration: none;
+}
+#chuyen .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #434343;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+#chuyen .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #eceee3;
+}
+#chuyen1 .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+}
+#chuyen1 .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+}
+#chuyen1 .owl-nav {
+  position: absolute;
+  left: 0px;
+  top: 40%;
+  width: 100%;
+}
+#chuyen1 .owl-nav [class*='owl-'] {
+  font-size: 80px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #000000
+}
+#chuyen1 .owl-nav .owl-next {
+  position: absolute;
+  right: 5%;
+}
+#chuyen1 .owl-nav .owl-prev {
+  position: absolute;
+  left: 5%;
+}
+#chuyen1 .owl-nav [class*='owl-']:hover {
+  background: none;
+  border: none;
+  color: #AEAEAE;
+  text-decoration: none;
+}
+#chuyen1 .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #434343;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+#chuyen1 .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #eceee3;
+}
+.contact-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px; /* Khung lớn hơn */
+  background-color: white;
+  color: black;
+  font-size: 24px; /* Chữ lớn hơn */
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid white; /* Viền dày hơn */
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.content {
+  display: flex;
+  flex-direction: column; /* Sắp xếp chữ và nút theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.additional-text {
+  font-size: 36px; /* Tăng kích thước chữ */
+  color: white; /* Màu trắng nổi bật */
+  margin-bottom: 20px; /* Khoảng cách giữa chữ và nút */
+}
+.contact-button {
+  padding: 15px 30px; /* Tăng kích thước nút */
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.contact-button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+/* Khung toàn màn hình */
+.full-screen-banner {
+  position: fixed; /* Đặt khung cố định */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Nền đen với độ mờ */
+  display: flex; /* Sử dụng Flexbox */
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  z-index: 9999; /* Đặt lớp phía trên cùng */
+}
+/* Hộp chứa văn bản */
+.commitment-box {
+  width: 100%; /* Đảm bảo khung rộng bằng 100% chiều rộng của phần tử chứa */
+  height: 70px;
+  max-width: 100%; /* Tạo giới hạn chiều rộng khung (có thể thay đổi tùy ý) */
+  padding: 12px; /* Khoảng cách giữa nội dung và viền khung */
+  text-align: center; /* Canh giữa nội dung văn bản */
+  background-color: #430000; /* Màu nền khung */
+  font-size: 15px; /* Cỡ chữ */
+  font-weight: bold; /* Làm đậm văn bản */
+  color: white; /* Màu chữ */
+}
+/* Đặt hình ảnh trong container */
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng phóng to ảnh khi hover */
+}
+/* Lớp overlay phủ lên hình ảnh */
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Lớp phủ tối */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+/* Chữ "View More" */
+.view-more {
+  color: white;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+/* Hover vào ảnh để hiển thị overlay */
+.image-container:hover img {
+  transform: scale(1.1); /* Phóng to hình ảnh */
+}
+.image-container:hover .overlay2 {
+  opacity: 1; /* Hiển thị overlay */
+}
+/* Hover vào chữ "View More" */
+.view-more:hover {
+  background: white; /* Đổi màu nền */
+  color: black; /* Đổi màu chữ */
+  border-color: black; /* Đổi màu viền */
+}
+.video-container {
+  display: flex; /* Sử dụng Flexbox để căn giữa */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 90vh; /* Chiều cao của khung chứa (toàn màn hình) */
+  width: 100%; /* Chiều rộng toàn màn hình */
+  overflow: hidden; /* Đảm bảo nội dung không vượt quá khung chứa */
+}
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+.video-container2 {
+  position: relative;
+  display: inline-block;
+}
+.video-container2 video {
+  display: block;
+}
+.overlay3 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Màu nền tối mờ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Ẩn overlay ban đầu */
+  transition: opacity 0.3s ease-in-out;
+}
+.video-container2:hover .overlay3 {
+  opacity: 1; /* Hiển thị overlay khi hover */
+}
+.view-more2 {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+.view-more2:hover {
+  background: rgba(255, 255, 255, 0.5); /* Đổi nền khi hover */
+}
+a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: inherit; /* Đảm bảo liên kết giữ nguyên màu chữ */
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 40px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+	margin-right: 15px;
+	margin-top: px;
+}
+
+.social-icon:hover {
+  color: #0073e6; /* Color khi hover, có thể thay đổi theo ý muốn */
+  transform: scale(1.1);
+}
+
+#facebook:hover {
+  color: #3b5998; /* Màu Facebook */
+}
+
+#instagram:hover {
+  color: #e4405f; /* Màu Instagram */
+}
+
+#twitter:hover {
+  color: #1da1f2; /* Màu Twitter */
+}
+
+.footer-links {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px; /* Khoảng cách giữa các mục */
+            font-size: 14px;
+        }
+
+
+.login-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+            width: 300px;
+            margin: 10px auto;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hiệu ứng khi rê chuột vào nút */
+        .login-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Biểu tượng Font Awesome */
+        .login-btn i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+
+/* Container for the Login Form */
+.login-container1 {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Form Elements */
+.login-form1 h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form1 label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.login-form1 input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Forgot Password Link */
+.forgot-password1 {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password1 a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.forgot-password1 a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons Group */
+.button-group1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Button Styling */
+.btn1 {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Create Account Button */
+.create-account1 {
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.create-account1:hover {
+    background-color: #f0f0f0;
+}
+
+/* Login Button */
+.login1 {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.login1:hover {
+    background-color: #333;
+}
